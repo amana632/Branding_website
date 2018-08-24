@@ -45,6 +45,10 @@
     <link rel="stylesheet" href="css/style.css" />
     <!-- responsive css -->
     <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+
+
     <!--[if IE]>
             <script src="js/html5shiv.js"></script>
         <![endif]-->
@@ -193,19 +197,28 @@
                 <div class="col-md-9 col-sm-9 col-xs-12 display-table one-third-screen md-height-350px sm-height-500px xs-height-auto text-center wow bounceInRight xs-height-auto">
                     <div class="display-table-cell vertical-align-middle">
                         <div class="font-weight-300 alt-font title-large text-extra-dark-gray display-inline-block vertical-align-bottom margin-auto">I'm
-                            <span class="font-weight-600 text-bold-underline position-relative">colin smith</span>
+                            <span class="font-weight-600 text-bold-underline position-relative">
+                                <span id="username"></span>
+                            </span>
                         </div>
                         <div class="text-medium-gray text-small text-uppercase margin-40px-top letter-spacing-2 alt-font xs-margin-10px-top">Designer & Frontend Developer</div>
                         <div></div>
-                        <div class="text-medium-gray text-small text-uppercase margin-40px-top letter-spacing-2 alt-font xs-margin-10px-top">From- Place</div>
+                        <div class="text-medium-gray text-small text-uppercase margin-40px-top letter-spacing-2 alt-font xs-margin-10px-top">From- Place
+                        </div>
                         <br>
                         <br>
                         <div style="display:flex; justify-content: center">
                             <div class="p-2 bd-highlight">
                                 <img src="./images/instagram-logo.jpg" style="height:40px;width:40px">
                             </div>
-                            <div style="flex-grow: 1;">FOLLOWERS</div>
-                            <div class="p-2 bd-highlight">FOLLOWING</div>
+                            <div style="flex-grow: 1;">FOLLOWERS:
+                                <br>
+                                <span id="following"></span>
+                            </div>
+                            <div class="p-2 bd-highlight">FOLLOWING:
+                                <br>
+                                <span id="followers"></span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -251,17 +264,22 @@
                             <li class="grid-sizer"></li>
                             <!-- start portfolio item -->
                             <li class="grid-item wow advertising design fadeInUp">
-                                <a href="single-project-page-01.html">
+                                <a id="link1">
                                     <figure>
                                         <div class="portfolio-img">
-                                            <img src="images/portfolio-image8.jpg" alt="" />
+                                            <input id="imgurl1" type="image">
+
                                         </div>
                                         <figcaption>
                                             <div class="portfolio-hover-main">
                                                 <div class="portfolio-hover-box vertical-align-middle">
                                                     <div class="portfolio-icon alt-font font-weight-600 icon-medium">+</div>
-                                                    <span class="text-extra-large alt-font text-extra-dark-gray margin-5px-bottom">Tailoring Interior</span>
-                                                    <p class="no-letter-spacing text-small no-margin-bottom text-medium-gray">Branding and Brochure</p>
+                                                    <span style="color:black" id="text1"></span>
+                                                    <br>
+                                                    <i class="fas fa-heart"></i>
+
+
+                                                    <span id="like1"></span>
                                                 </div>
                                             </div>
                                         </figcaption>
@@ -271,17 +289,19 @@
                             <!-- end portfolio item -->
                             <!-- start  portfolio item -->
                             <li class="grid-item wow fadeInUp web branding photography" data-wow-delay="0.2s">
-                                <a href="single-project-page-02.html">
+                                <a id="link2">
                                     <figure>
                                         <div class="portfolio-img">
-                                            <img src="images/portfolio-image9.jpg" alt="" />
+                                            <input id="imgurl2" type="image">
                                         </div>
                                         <figcaption>
                                             <div class="portfolio-hover-main">
                                                 <div class="portfolio-hover-box vertical-align-middle">
                                                     <div class="portfolio-icon alt-font font-weight-600 icon-medium">+</div>
-                                                    <span class="text-extra-large alt-font text-extra-dark-gray margin-5px-bottom">Educamp School</span>
-                                                    <p class="no-letter-spacing text-small no-margin-bottom text-medium-gray">Branding and Identity</p>
+                                                    <span style="color:black" id="text2"></span>
+                                                    <br>
+                                                    <i class="fas fa-heart"></i>
+                                                    <span id="like2"></span>
                                                 </div>
                                             </div>
                                         </figcaption>
@@ -291,17 +311,20 @@
                             <!-- end portfolio item -->
                             <!-- start portfolio item -->
                             <li class="grid-item grid-item-double design wow fadeInUp" data-wow-delay="0.4s">
-                                <a href="single-project-page-03.html">
+                                <a id="link3">
                                     <figure>
                                         <div class="portfolio-img">
-                                            <img src="images/portfolio-image10.jpg" alt="" />
+                                            <input id="imgurl3" type="image">
                                         </div>
                                         <figcaption>
                                             <div class="portfolio-hover-main">
                                                 <div class="portfolio-hover-box vertical-align-middle">
                                                     <div class="portfolio-icon alt-font font-weight-600 icon-medium">+</div>
-                                                    <span class="text-extra-large alt-font text-extra-dark-gray margin-5px-bottom">Pixflow Studio</span>
-                                                    <p class="no-letter-spacing text-small no-margin-bottom text-medium-gray">Branding and Brochure</p>
+                                                    <span style="color:black" id="text3"></span>
+                                                    <br>
+                                                    <i class="fas fa-heart"></i>
+
+                                                    <span id="like3"></span>
                                                 </div>
                                             </div>
                                         </figcaption>
@@ -311,17 +334,19 @@
                             <!-- end portfolio item -->
                             <!-- start portfolio item -->
                             <li class="grid-item grid-item-double branding web wow fadeInUp">
-                                <a href="single-project-page-04.html">
+                                <a id="link4">
                                     <figure>
                                         <div class="portfolio-img">
-                                            <img src="images/portfolio-image11.jpg" alt="" />
+                                            <input id="imgurl4" type="image">
                                         </div>
                                         <figcaption>
                                             <div class="portfolio-hover-main">
                                                 <div class="portfolio-hover-box vertical-align-middle">
                                                     <div class="portfolio-icon alt-font font-weight-600 icon-medium">+</div>
-                                                    <span class="text-extra-large alt-font text-extra-dark-gray margin-5px-bottom">Banana Design</span>
-                                                    <p class="no-letter-spacing text-small no-margin-bottom text-medium-gray">Logo and Identity</p>
+                                                    <span style="color:black" id="text4"></span>
+                                                    <br>
+                                                    <i class="fas fa-heart"></i>
+                                                    <span id="like4"></span>
                                                 </div>
                                             </div>
                                         </figcaption>
@@ -331,17 +356,19 @@
                             <!-- end portfolio item -->
                             <!-- start portfolio item -->
                             <li class="grid-item grid-item-double advertising wow fadeInUp" data-wow-delay="0.2s">
-                                <a href="single-project-page-05.html">
+                                <a id="link5">
                                     <figure>
                                         <div class="portfolio-img">
-                                            <img src="images/portfolio-image12.jpg" alt="" />
+                                            <input id="imgurl5" type="image">
                                         </div>
                                         <figcaption>
                                             <div class="portfolio-hover-main">
                                                 <div class="portfolio-hover-box vertical-align-middle">
                                                     <div class="portfolio-icon alt-font font-weight-600 icon-medium">+</div>
-                                                    <span class="text-extra-large alt-font text-extra-dark-gray margin-5px-bottom">Third Eye Glasses</span>
-                                                    <p class="no-letter-spacing text-small no-margin-bottom text-medium-gray">Web and Photography</p>
+                                                    <span style="color:black" id="text5"></span>
+                                                    <br>
+                                                    <i class="fas fa-heart"></i>
+                                                    <span id="like5"></span>
                                                 </div>
                                             </div>
                                         </figcaption>
@@ -351,17 +378,19 @@
                             <!-- end portfolio item -->
                             <!-- start portfolio item -->
                             <li class="grid-item grid-item-double web photography wow fadeInUp" data-wow-delay="0.4s">
-                                <a href="single-project-page-06.html">
+                                <a id="link6">
                                     <figure>
                                         <div class="portfolio-img">
-                                            <img src="images/portfolio-image13.jpg" alt="" />
+                                            <input id="imgurl6" type="image">
                                         </div>
                                         <figcaption>
                                             <div class="portfolio-hover-main">
                                                 <div class="portfolio-hover-box vertical-align-middle">
                                                     <div class="portfolio-icon alt-font font-weight-600 icon-medium">+</div>
-                                                    <span class="text-extra-large alt-font text-extra-dark-gray margin-5px-bottom">Violator Series</span>
-                                                    <p class="no-letter-spacing text-small no-margin-bottom text-medium-gray">Web and Photography</p>
+                                                    <span style="color:black" id="text6"></span>
+                                                    <br>
+                                                    <i class="fas fa-heart"></i>
+                                                    <span id="like6"></span>
                                                 </div>
                                             </div>
                                         </figcaption>
@@ -371,17 +400,19 @@
                             <!-- end portfolio item -->
                             <!-- start portfolio item -->
                             <li class="grid-item grid-item-double branding photography wow fadeInUp">
-                                <a href="single-project-page-07.html">
+                                <a id="link7">
                                     <figure>
                                         <div class="portfolio-img">
-                                            <img src="images/portfolio-image14.jpg" alt="" />
+                                            <input id="imgurl7" type="image">
                                         </div>
                                         <figcaption>
                                             <div class="portfolio-hover-main">
                                                 <div class="portfolio-hover-box vertical-align-middle">
                                                     <div class="portfolio-icon alt-font font-weight-600 icon-medium">+</div>
-                                                    <span class="text-extra-large alt-font text-extra-dark-gray margin-5px-bottom">Tailoring Interior</span>
-                                                    <p class="no-letter-spacing text-small no-margin-bottom text-medium-gray">Branding and Brochure</p>
+                                                    <span style="color:black" id="text7"></span>
+                                                    <br>
+                                                    <i class="fas fa-heart"></i>
+                                                    <span id="like7"></span>
                                                 </div>
                                             </div>
                                         </figcaption>
@@ -390,17 +421,19 @@
                             </li>
                             <!-- end portfolio item -->
                             <li class="grid-item wow fadeInUp web design" data-wow-delay="0.2s">
-                                <a href="single-project-page-08.html">
+                                <a id="link8">
                                     <figure>
                                         <div class="portfolio-img">
-                                            <img src="images/portfolio-image15.jpg" alt="" />
+                                            <input id="imgurl8" type="image">
                                         </div>
                                         <figcaption>
                                             <div class="portfolio-hover-main">
                                                 <div class="portfolio-hover-box vertical-align-middle">
                                                     <div class="portfolio-icon alt-font font-weight-600 icon-medium">+</div>
-                                                    <span class="text-extra-large alt-font text-extra-dark-gray margin-5px-bottom">Designblast Inc</span>
-                                                    <p class="no-letter-spacing text-small no-margin-bottom text-medium-gray">Branding and Brochure</p>
+                                                    <span style="color:black" id="text8"></span>
+                                                    <br>
+                                                    <i class="fas fa-heart"></i>
+                                                    <span id="like8"></span>
                                                 </div>
                                             </div>
                                         </figcaption>
@@ -410,17 +443,19 @@
                             <!-- end portfolio item -->
                             <!-- start  portfolio item -->
                             <li class="grid-item wow fadeInUp branding advertising" data-wow-delay="0.4s">
-                                <a href="single-project-page-01.html">
+                                <a id="link9">
                                     <figure>
                                         <div class="portfolio-img">
-                                            <img src="images/portfolio-image16.jpg" alt="" />
+                                            <input id="imgurl9" type="image">
                                         </div>
                                         <figcaption>
                                             <div class="portfolio-hover-main">
                                                 <div class="portfolio-hover-box vertical-align-middle">
                                                     <div class="portfolio-icon alt-font font-weight-600 icon-medium">+</div>
-                                                    <span class="text-extra-large alt-font text-extra-dark-gray margin-5px-bottom">HardDot Stone</span>
-                                                    <p class="no-letter-spacing text-small no-margin-bottom text-medium-gray">Web and Photography</p>
+                                                    <span style="color:black" id="text9"></span>
+                                                    <br>
+                                                    <i class="fas fa-heart"></i>
+                                                    <span id="like9"></span>
                                                 </div>
                                             </div>
                                         </figcaption>
@@ -430,17 +465,19 @@
                             <!-- end portfolio item -->
                             <!-- start portfolio item -->
                             <li class="grid-item grid-item-double web photography wow fadeInUp">
-                                <a href="single-project-page-02.html">
+                                <a id="link10">
                                     <figure>
                                         <div class="portfolio-img">
-                                            <img src="images/portfolio-image17.jpg" alt="" />
+                                            <input id="imgurl10" type="image">
                                         </div>
                                         <figcaption>
                                             <div class="portfolio-hover-main">
                                                 <div class="portfolio-hover-box vertical-align-middle">
                                                     <div class="portfolio-icon alt-font font-weight-600 icon-medium">+</div>
-                                                    <span class="text-extra-large alt-font text-extra-dark-gray margin-5px-bottom">Crop Identity</span>
-                                                    <p class="no-letter-spacing text-small no-margin-bottom text-medium-gray">Branding and Brochure</p>
+                                                    <span style="color:black" id="text10"></span>
+                                                    <br>
+                                                    <i class="fas fa-heart"></i>
+                                                    <span id="like10"></span>
                                                 </div>
                                             </div>
                                         </figcaption>
@@ -569,6 +606,111 @@
     <!-- revolution -->
     <script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
     <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script>
+        var obj1;
+
+        function reqListener() {
+            console.log(this.responseText);
+            console.log(oReq1);
+            obj1 = JSON.parse(oReq1.response);
+            document.getElementById("followers").innerHTML = obj1.data.counts.follows;
+            document.getElementById("following").innerHTML = obj1.data.counts.followed_by;
+
+
+            console.log(obj1);
+        }
+
+        var oReq1 = new XMLHttpRequest();
+        oReq1.addEventListener("load", reqListener);
+        oReq1.open("GET", "https://api.instagram.com/v1/users/self/?access_token=1693993867.4161eab.44ca78d0acfa4b0e952ce3f7e19c256f");
+        oReq1.send();
+
+    </script>
+    <script>
+        var obj;
+        var imgurl1;
+        function reqListener() {
+            console.log(this.responseText);
+            console.log(oReq);
+            obj = JSON.parse(oReq.response);
+
+            document.getElementById("username").innerHTML = obj.data[0].user.username;
+            imgurl1 = obj.data[0].images.standard_resolution.url;
+            var input = document.getElementById('imgurl1');
+            input.src = imgurl1;
+            imgurl2 = obj.data[1].images.standard_resolution.url;
+            var input = document.getElementById('imgurl2');
+            input.src = imgurl2;
+            imgurl3 = obj.data[2].images.standard_resolution.url;
+            var input = document.getElementById('imgurl3');
+            input.src = imgurl3;
+            imgurl4 = obj.data[3].images.standard_resolution.url;
+            var input = document.getElementById('imgurl4');
+            input.src = imgurl4;
+            imgurl5 = obj.data[4].images.standard_resolution.url;
+            var input = document.getElementById('imgurl5');
+            input.src = imgurl5;
+            imgurl6 = obj.data[5].images.standard_resolution.url;
+            var input = document.getElementById('imgurl6');
+            input.src = imgurl6;
+            imgurl7 = obj.data[6].images.standard_resolution.url;
+            var input = document.getElementById('imgurl7');
+            input.src = imgurl7;
+            imgurl8 = obj.data[7].images.standard_resolution.url;
+            var input = document.getElementById('imgurl8');
+            input.src = imgurl8;
+            imgurl9 = obj.data[8].images.standard_resolution.url;
+            var input = document.getElementById('imgurl9');
+            input.src = imgurl9;
+            imgurl10 = obj.data[9].images.standard_resolution.url;
+            var input = document.getElementById('imgurl10');
+            input.src = imgurl10;
+            document.getElementById("link1").setAttribute("href", obj.data[0].link);
+            document.getElementById("link2").setAttribute("href", obj.data[1].link);
+            document.getElementById("link3").setAttribute("href", obj.data[2].link);
+            document.getElementById("link4").setAttribute("href", obj.data[3].link);
+            document.getElementById("link5").setAttribute("href", obj.data[4].link);
+            document.getElementById("link6").setAttribute("href", obj.data[5].link);
+            document.getElementById("link7").setAttribute("href", obj.data[6].link);
+            document.getElementById("link8").setAttribute("href", obj.data[7].link);
+            document.getElementById("link9").setAttribute("href", obj.data[8].link);
+            document.getElementById("link10").setAttribute("href", obj.data[9].link);
+            document.getElementById("text1").innerHTML = obj.data[0].caption.text;
+            document.getElementById("text2").innerHTML = obj.data[1].caption.text;
+            document.getElementById("text3").innerHTML = obj.data[2].caption.text;
+            document.getElementById("text4").innerHTML = obj.data[3].caption.text;
+            document.getElementById("text5").innerHTML = obj.data[4].caption.text;
+            document.getElementById("text6").innerHTML = obj.data[5].caption.text;
+            document.getElementById("text7").innerHTML = obj.data[6].caption.text;
+            document.getElementById("text8").innerHTML = obj.data[7].caption.text;
+            document.getElementById("text9").innerHTML = obj.data[8].caption.text;
+            document.getElementById("text10").innerHTML = obj.data[9].caption.text;
+            document.getElementById("like1").innerHTML = obj.data[0].likes.count;
+            document.getElementById("like2").innerHTML = obj.data[1].likes.count;
+            document.getElementById("like3").innerHTML = obj.data[2].likes.count;
+            document.getElementById("like4").innerHTML = obj.data[3].likes.count;
+            document.getElementById("like5").innerHTML = obj.data[4].likes.count;
+            document.getElementById("like6").innerHTML = obj.data[5].likes.count;
+            document.getElementById("like7").innerHTML = obj.data[6].likes.count;
+            document.getElementById("like8").innerHTML = obj.data[7].likes.count;
+            document.getElementById("like9").innerHTML = obj.data[8].likes.count;
+            document.getElementById("like10").innerHTML = obj.data[9].likes.count;
+
+
+
+
+
+
+
+            console.log(obj);
+        }
+
+        var oReq = new XMLHttpRequest();
+        oReq.addEventListener("load", reqListener);
+        oReq.open("GET", "https://api.instagram.com/v1/users/self/media/recent/?access_token=1693993867.4161eab.44ca78d0acfa4b0e952ce3f7e19c256f");
+        oReq.send();
+
+    </script>
     <!-- revolution slider extensions (load below extensions JS files only on local file systems to make the slider work! The following part can be removed on server for on demand loading) -->
     <!--<script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
         <script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
